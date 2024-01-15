@@ -1,7 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
+#Code was Created by MONNK-CODE on github
 
 
 import random
@@ -41,10 +38,12 @@ while True:
             another = input("Do you want to generate another password (yes/no): ")
             if another == 'yes':
                 continue
-            else:
+            elif another == 'no':
                 print("Thanks for using Muhais's Password Generator")
-                break  # Exit the loop
-                
+                break  
+            else:
+                print("Invalid input. Exiting the loop.")
+                break
     except ValueError:
         print("Error: Invalid input. Please enter a valid number for password length.")
 
